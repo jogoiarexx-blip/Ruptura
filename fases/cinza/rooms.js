@@ -1,0 +1,1 @@
+RupturaRegisterLevelRooms('gray',[{name:'ÁTRIO ESQUECIDO',waves:[['crawler','crawler','crawler','crawler']]},{name:'GALERIA DAS CORRENTES',waves:[['crawler','crawler','shooter','crawler'],['brute','crawler','crawler']],mini:'brute'},{name:'CÂMARA PARTIDA',chest:true,waves:[['crawler','crawler','shooter','brute','crawler']]},{name:'SALÃO DO GUARDIÃO',boss:true}]);

@@ -1,0 +1,1 @@
+RupturaRegisterLevelRooms('cacada',[{name:'CORREDOR DE EVACUAÇÃO',waves:[['agent','agent','sniper']]},{name:'PLATAFORMA DE CARGA',waves:[['agent','enforcer'],['sniper','agent']],chest:true},{name:'PONTE DE FUGA',waves:[['enforcer','agent','sniper']],mini:'enforcer'},{name:'VIADUTO BLOQUEADO',boss:true}]);

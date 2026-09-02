@@ -1,0 +1,1 @@
+RupturaRegisterLevel('duel',{id:'duel',name:'DUELO DE DARIUS',rank:'HISTÓRIA',color:'#58a7ff',accent:'#c7e5ff',boss:'DARIUS VALE',theme:'ruins',recommended:10,storyMission:true,storyMissionType:'duel'});

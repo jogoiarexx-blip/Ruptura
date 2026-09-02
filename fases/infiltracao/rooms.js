@@ -1,0 +1,1 @@
+RupturaRegisterLevelRooms('infiltracao',[{name:'DUTOS DE SERVIÇO',waves:[['sentinel','shooter']]},{name:'ARQUIVO PRIVADO',chest:true,waves:[['wraith','sentinel'],['stalker','shooter']]},{name:'PASSARELA DE SEGURANÇA',waves:[['executioner','sentinel','stalker']],mini:'executioner'},{name:'NÚCLEO DE COMANDO',boss:true}]);

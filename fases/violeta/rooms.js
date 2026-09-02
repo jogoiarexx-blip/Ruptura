@@ -1,0 +1,1 @@
+RupturaRegisterLevelRooms('violet',[{name:'CORREDOR DO VAZIO',waves:[['wraith','crawler','wraith','executioner']]},{name:'CRIPTA VIOLETA',waves:[['executioner','shooter','wraith'],['executioner','sentinel','crawler']],mini:'executioner'},{name:'ALTAR DA FOME',chest:true,waves:[['executioner','executioner','wraith','shooter','sentinel']]},{name:'TRONO ABISSAL',boss:true}]);

@@ -1,0 +1,1 @@
+RupturaRegisterLevelRooms('blue',[{name:'PASSAGEM CONGELADA',waves:[['wraith','wraith','wraith','crawler']]},{name:'PONTE DE GELO',waves:[['wraith','shooter','shooter'],['sentinel','wraith','wraith']],mini:'sentinel'},{name:'SANTUÁRIO AZUL',chest:true,waves:[['sentinel','wraith','wraith','shooter']]},{name:'CÂMARA DA SENTINELA',boss:true}]);

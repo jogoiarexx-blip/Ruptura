@@ -1,0 +1,1 @@
+RupturaRegisterLevel('cacada',{id:'cacada',name:'CAÇADA INTERNA',rank:'HISTÓRIA',color:'#ff7f98',accent:'#ffd1da',boss:'CAPITÃO HARK',theme:'ruins',recommended:14,storyMission:true,storyMissionType:'pursuit'});

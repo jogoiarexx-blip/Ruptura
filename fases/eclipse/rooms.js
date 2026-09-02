@@ -1,0 +1,1 @@
+RupturaRegisterLevelRooms('eclipse',[{name:'ALA DE CONTENÇÃO',waves:[['sentinel','wraith','shooter'],['executioner','sentinel','wraith']]},{name:'ARQUIVO SELADO',chest:true,waves:[['stalker','executioner','sentinel'],['wraith','shooter','executioner']],mini:'executioner'},{name:'NÚCLEO DA INSTALAÇÃO',boss:true}]);

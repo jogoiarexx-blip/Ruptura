@@ -1,0 +1,1 @@
+RupturaRegisterLevel('infiltracao',{id:'infiltracao',name:'OPERAÇÃO FANTASMA',rank:'HISTÓRIA',color:'#8bffb0',accent:'#d6ffe3',boss:'EXECUTOR DE VAREK',theme:'ruins',recommended:12,storyMission:true,storyMissionType:'infiltration'});
