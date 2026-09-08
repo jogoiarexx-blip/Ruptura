@@ -1,3 +1,11 @@
+RUPTURA v0.3.7
+
+- Imagens do jogo otimizadas em WEBP.
+- Sprites, bosses, portais, NPCs e background do menu migrados para WEBP.
+- Ícones PWA mantidos em PNG para compatibilidade com instalação no celular.
+- Service Worker, cache offline e referências de assets atualizados.
+- Save: ruptura-save-v037 com migração automática da v0.3.6.
+
 RUPTURA v0.3.6
 
 - Hub reorganizado para o background atual.
