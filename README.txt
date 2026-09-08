@@ -1,3 +1,62 @@
+RUPTURA v0.3.6
+
+- Hub reorganizado para o background atual.
+- Serviços/NPCs ficaram à esquerda e centro.
+- Portais ganharam área exclusiva à direita em duas linhas.
+- Varek ganhou posição própria.
+- Save: ruptura-save-v036 com migração automática da v0.3.5.
+
+RUPTURA v0.3.5
+
+- Sprites próprios dos sete portais aplicados ao Hub.
+- Cada portal possui 4 frames separados e animação individual.
+- Portais bloqueados ficam visualmente escurecidos e mais lentos.
+- PWA/offline atualizado para cachear todos os sprites novos.
+- Save: ruptura-save-v035 com migração automática da v0.3.4.
+
+RUPTURA v0.3.4
+
+- Background panorâmico aplicado ao Hub rolável.
+- Imagem otimizada para 1760×720 em WebP.
+- NPCs e portais continuam interativos e são desenhados sobre o cenário.
+- O cenário recebe escurecimento leve para os portais jogáveis se destacarem.
+- Save: ruptura-save-v034 com migração automática da v0.3.3.
+
+RUPTURA v0.3.3
+
+- Agente Tático: novo sprite aplicado e otimizado quadro a quadro.
+- Próximo foco visual: background do Hub/área de portais e NPCs.
+
+RUPTURA v0.3.2
+
+- Sprite do Varek aplicado ao jogo.
+- Varek agora usa frames próprios no Hub quando sua presença é ativada pela história.
+- Retrato próprio do Varek adicionado à transmissão/serviço.
+- Assets novos: assets/npcs/varek/idle/0..3.png e assets/npcs/varek/portrait.png.
+- Save: ruptura-save-v032 com migração automática da v0.3.1.
+
+RUPTURA v0.3.1
+
+- Background ilustrado aplicado ao menu principal.
+- Adicionada escolha de gráficos: AUTO, BAIXO, MÉDIO e ALTO.
+- O preset altera quantidade de partículas, motes e intensidade de efeitos/vinheta.
+- PWA offline atualizado para incluir o novo asset do menu.
+- Save: ruptura-save-v031 com migração automática da v0.3.0.
+
+RUPTURA v0.3.0
+
+- Offline ampliado: Service Worker pré-cacheia player, inimigos, bosses, ícones e todas as fases.
+- Cache versionado e limpeza automática de versões antigas.
+- Status do cache offline mostrado no menu/PWA.
+- Save: ruptura-save-v030 com migração automática da v0.2.9.
+
+RUPTURA v0.2.9
+
+- Ícone oficial do jogo adicionado ao projeto.
+- PWA/instalação no celular adicionada com manifest, service worker e botão de instalar.
+- O jogo agora pode ser instalado em navegadores compatíveis no celular e abrir em modo standalone.
+- Save: ruptura-save-v029 com migração automática da v0.2.8.
+
 RUPTURA v0.2.8
 
 - Novo sprite do Brute aplicado ao jogo em frames separados.

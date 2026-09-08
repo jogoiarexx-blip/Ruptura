@@ -6,7 +6,7 @@ for(const x of [
   'LevelRuntime?.pause?.()',
   'audioCtx.suspend()',
   "if(paused||modalOpen||state==='menu'){updateUI();return}",
-  "saveKey='ruptura-save-v028'"
+  "saveKey='ruptura-save-v036'"
 ]) if(!m.includes(x)) throw Error('missing '+x);
 for(const x of ['pause(){','resume(){','remaining','runtimePaused']) if(!l.includes(x)) throw Error('loader missing '+x);
-console.log('PASS pause-audit v0.2.8');
+console.log('PASS pause-audit v0.3.6');

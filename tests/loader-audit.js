@@ -9,5 +9,5 @@ for(let i=0;i<ids.length;i++){
   if(!reg[ids[i]]?.rooms?.length)throw Error('invalid '+ids[i]);
 }
 const m=fs.readFileSync('js/main.js','utf8');
-if(!m.includes("saveKey='ruptura-save-v028'"))throw Error('save');
-console.log('PASS loader-audit v0.2.8: 7 ruptures + 4 story missions split');
+if(!m.includes("saveKey='ruptura-save-v036'"))throw Error('save');
+console.log('PASS loader-audit v0.3.6: 7 ruptures + 4 story missions split');

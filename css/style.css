@@ -54,3 +54,9 @@
 @keyframes menuGlow{0%,100%{filter:drop-shadow(0 0 8px rgba(101,245,255,.15));}50%{filter:drop-shadow(0 0 18px rgba(143,104,255,.28));}}
 @keyframes menuFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-5px);}}
 @keyframes menuBlink{0%,100%{opacity:1;}50%{opacity:.7;}}
+
+.install-status{margin-top:10px;color:#9edcff;font-size:11px;font-weight:800;letter-spacing:.8px}body.pwa-installed #installStatus{color:#9cffb2}body.pwa-installed #installBtn{display:none!important}@media (pointer:coarse){#menu .card{padding-bottom:30px}.install-status{font-size:10px}}
+
+#graphicsBtn,#pauseGraphicsBtn{border-color:#8f68ff55;color:#efe6ff}.install-status,.graphics-note{transition:all .2s ease}.graphics-active{box-shadow:0 0 24px rgba(143,104,255,.18)}body[data-graphics="low"] #menu .card{box-shadow:0 22px 55px #000a,0 0 36px rgba(101,245,255,.08)}body[data-graphics="high"] #menu .card{box-shadow:0 34px 98px #000,0 0 90px rgba(101,245,255,.16),0 0 130px rgba(143,104,255,.14)}
+
+.npc-portrait{width:108px;height:108px;object-fit:contain;display:block;margin:0 auto 12px;filter:drop-shadow(0 0 16px rgba(101,245,255,.28))}.story-scene .npc-portrait{width:92px;height:92px}.service-item.story-scene{text-align:center}

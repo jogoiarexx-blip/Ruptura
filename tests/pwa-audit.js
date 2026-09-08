@@ -1,0 +1,13 @@
+const fs=require('fs');
+const html=fs.readFileSync('index.html','utf8');
+const main=fs.readFileSync('js/main.js','utf8');
+const pwa=fs.readFileSync('js/pwa.js','utf8');
+const manifest=fs.readFileSync('manifest.webmanifest','utf8');
+const sw=fs.readFileSync('sw.js','utf8');
+for(const s of ['rel="manifest"','id="installBtn"','id="installStatus"','js/pwa.js']) if(!html.includes(s)) throw Error('missing '+s);
+if(!main.includes("saveKey='ruptura-save-v036'")) throw Error('save');
+for(const s of ['beforeinstallprompt','serviceWorker.register','appinstalled','CACHE_STATUS']) if(!pwa.includes(s)) throw Error('missing '+s);
+for(const s of ['short_name','icons','display']) if(!manifest.includes(s)) throw Error('missing '+s);
+for(const s of ['APP_CACHE','PRECACHE_URLS','cacheAllIndividually','ruptura-full-offline-v036','fetch']) if(!sw.includes(s)) throw Error('missing '+s);
+for(const f of ['icons/icon-192.png','icons/icon-512.png','icons/icon-maskable-192.png','apple-touch-icon.png','favicon.png']) if(!fs.existsSync(f)) throw Error('missing '+f);
+console.log('PASS pwa-audit v0.3.6');
