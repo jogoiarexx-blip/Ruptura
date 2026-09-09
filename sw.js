@@ -1,6 +1,6 @@
 // CACHE_STATUS: usado pelo instalador/PWA para exibir o status do offline completo.
-const APP_CACHE = 'ruptura-full-offline-v037';
-const RUNTIME_CACHE = 'ruptura-runtime-v037';
+const APP_CACHE = 'ruptura-full-offline-v040';
+const RUNTIME_CACHE = 'ruptura-runtime-v040';
 const PRECACHE_URLS = [
   "./index.html",
   "./css/style.css",
@@ -152,6 +152,14 @@ const PRECACHE_URLS = [
   "./assets/enemies/wraith/1.webp",
   "./assets/enemies/wraith/2.webp",
   "./assets/enemies/wraith/3.webp",
+  "./assets/npcs/hub/ares.webp",
+  "./assets/npcs/hub/darius.webp",
+  "./assets/npcs/hub/doran.webp",
+  "./assets/npcs/hub/kael.webp",
+  "./assets/npcs/hub/lyra.webp",
+  "./assets/npcs/hub/mira.webp",
+  "./assets/npcs/hub/nox.webp",
+  "./assets/npcs/hub/selene.webp",
   "./assets/npcs/varek/idle/0.webp",
   "./assets/npcs/varek/idle/1.webp",
   "./assets/npcs/varek/idle/2.webp",
@@ -215,6 +223,8 @@ const PRECACHE_URLS = [
   "./assets/portals/void/2.webp",
   "./assets/portals/void/3.webp",
   "./assets/ui/hub-background.webp",
+  "./assets/ui/hub-board.webp",
+  "./assets/ui/hub-operations-center.webp",
   "./assets/ui/menu-background.webp",
   "./fases/azul/level.js",
   "./fases/azul/rooms.js",
@@ -256,47 +266,6 @@ async function cacheAllIndividually(cache, urls) {
   return failures;
 }
 
-self.addEventListener('install', event => {
-  event.waitUntil((async () => {
-    const cache = await caches.open(APP_CACHE);
-    const failures = await cacheAllIndividually(cache, PRECACHE_URLS);
-    for (const required of ['./index.html','./css/style.css','./js/core/level-loader.js','./js/main.js']) {
-      if (!(await cache.match(required))) throw new Error('Arquivo essencial sem cache: '+required);
-    }
-    if (failures.length) console.warn('[RUPTURA offline] arquivos opcionais pendentes:', failures.length);
-    await self.skipWaiting();
-  })());
-});
-
-self.addEventListener('activate', event => {
-  event.waitUntil((async () => {
-    const keys = await caches.keys();
-    await Promise.all(keys.map(key => (key !== APP_CACHE && key !== RUNTIME_CACHE) ? caches.delete(key) : null));
-    await self.clients.claim();
-  })());
-});
-
-self.addEventListener('fetch', event => {
-  const request = event.request;
-  if (request.method !== 'GET') return;
-  const url = new URL(request.url);
-  if (url.origin !== self.location.origin) return;
-  const isDocument = request.mode === 'navigate' || request.destination === 'document';
-  if (isDocument) {
-    event.respondWith(fetch(request).then(response => {
-      const copy = response.clone();
-      caches.open(RUNTIME_CACHE).then(cache => cache.put(request, copy));
-      return response;
-    }).catch(() => caches.match(request).then(r => r || caches.match('./index.html'))));
-    return;
-  }
-  event.respondWith(caches.match(request).then(cached => {
-    if (cached) return cached;
-    return fetch(request).then(response => {
-      if (!response || response.status !== 200 || response.type === 'opaque') return response;
-      const copy = response.clone();
-      caches.open(RUNTIME_CACHE).then(cache => cache.put(request, copy));
-      return response;
-    }).catch(() => caches.match(request).then(r => r || caches.match('./index.html')));
-  }));
-});
+self.addEventListener('install', event => {event.waitUntil((async()=>{const cache=await caches.open(APP_CACHE);const failures=await cacheAllIndividually(cache,PRECACHE_URLS);for (const required of ['./index.html','./css/style.css','./js/core/level-loader.js','./js/main.js']) {if(!(await cache.match(required))) throw new Error('Arquivo essencial sem cache: '+required);}if(failures.length) console.warn('[RUPTURA offline] arquivos opcionais pendentes:', failures.length);await self.skipWaiting();})());});
+self.addEventListener('activate', event => {event.waitUntil((async()=>{const keys=await caches.keys();await Promise.all(keys.map(key => (key !== APP_CACHE && key !== RUNTIME_CACHE) ? caches.delete(key) : null));await self.clients.claim();})());});
+self.addEventListener('fetch', event => {const request=event.request;if(request.method!=='GET') return;const url=new URL(request.url);if(url.origin!==self.location.origin) return;const isDocument=request.mode==='navigate'||request.destination==='document';if(isDocument){event.respondWith(fetch(request).then(response=>{const copy=response.clone();caches.open(RUNTIME_CACHE).then(cache=>cache.put(request,copy));return response;}).catch(()=>caches.match(request).then(r=>r||caches.match('./index.html'))));return;}event.respondWith(caches.match(request).then(cached=>{if(cached) return cached;return fetch(request).then(response=>{if(!response||response.status!==200||response.type==='opaque') return response;const copy=response.clone();caches.open(RUNTIME_CACHE).then(cache=>cache.put(request,copy));return response;}).catch(()=>caches.match(request).then(r=>r||caches.match('./index.html')));}));});

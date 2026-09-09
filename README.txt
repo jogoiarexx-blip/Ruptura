@@ -1,3 +1,29 @@
+RUPTURA v0.4.0
+
+- NPCs do Hub agora usam sprites próprios em pixel art.
+- Adicionado centro operacional visual no meio do Hub com mesa tática/holográfica.
+- Quadro de Caçadas agora tem sprite próprio e presença física melhor no Hub.
+- Modais principais do Hub agora exibem retratos para Ares, Mira, Doran, Lyra, Kael, Nox, Selene e Darius.
+- Spawn do jogador no Hub levemente reajustado.
+- Save: ruptura-save-v040 com migração automática da v0.3.9.
+
+RUPTURA v0.3.9
+
+- Organizados NPCs do Hub com melhor alinhamento no chão.
+- Reduzida a sobreposição da UI do Hub: badges de Poção e Sombras movidos para a área superior.
+- Melhorada a área central operacional com painéis/seções mais legíveis.
+- Spawn do jogador no Hub ajustado para não ficar tão embaixo da HUD de skills.
+- Save: ruptura-save-v039 com migração automática da v0.3.8.
+
+RUPTURA v0.3.8
+
+- Portais recortados novamente a partir de um atlas melhor.
+- Corrigido o corte ruim dos sprites dos portais.
+- Ajustado o posicionamento da área de portais no Hub.
+- Labels dos portais agora têm placa escura para melhorar leitura.
+- Reduzido o escurecimento pesado da faixa inferior do Hub.
+- Save: ruptura-save-v038 com migração automática da v0.3.7.
+
 RUPTURA v0.3.7
 
 - Imagens do jogo otimizadas em WEBP.
