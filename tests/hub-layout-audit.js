@@ -1,7 +1,7 @@
 const fs=require('fs');
 const m=fs.readFileSync('js/main.js','utf8');
 for(const s of [
-  "saveKey='ruptura-save-v040'",
+  "saveKey='ruptura-save-v043'",
   "PORTAL CINZA',rank:'F',x:1085,y:360",
   "PORTAL AZUL',rank:'E',x:1250,y:360",
   "PORTAL VIOLETA',rank:'D',x:1415,y:360",
@@ -13,4 +13,4 @@ for(const s of [
   'ÁREA DE PORTAIS',
   'CENTRO OPERACIONAL'
 ]) if(!m.includes(s)) throw Error('missing '+s);
-console.log('PASS hub-layout-audit v0.4.0');
+console.log('PASS hub-layout-audit v0.4.3');

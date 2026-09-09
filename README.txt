@@ -1,3 +1,12 @@
+RUPTURA v0.4.3
+
+- Materiais agora caem fisicamente no chão com sprites animados: Núcleo, Presa, Cristal e Brasa.
+- Coleta com E adiciona o material ao inventário e mostra feedback visual.
+- Vestígios de Sombra agora usam sprites reais das Sombras no chão.
+- Extração bem-sucedida possui animação de ascensão antes do Vestígio desaparecer.
+- Bosses usam Vestígio maior e brilho reforçado.
+- Save: ruptura-save-v043 com migração automática da v0.4.0/v0.4.2.
+
 RUPTURA v0.4.0
 
 - NPCs do Hub agora usam sprites próprios em pixel art.

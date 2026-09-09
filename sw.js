@@ -1,6 +1,6 @@
 // CACHE_STATUS: usado pelo instalador/PWA para exibir o status do offline completo.
-const APP_CACHE = 'ruptura-full-offline-v040';
-const RUNTIME_CACHE = 'ruptura-runtime-v040';
+const APP_CACHE = 'ruptura-full-offline-v043-materials';
+const RUNTIME_CACHE = 'ruptura-runtime-v043-materials';
 const PRECACHE_URLS = [
   "./index.html",
   "./css/style.css",
@@ -19,6 +19,8 @@ const PRECACHE_URLS = [
   "./icons/icon-64.png",
   "./icons/icon-maskable-192.png",
   "./icons/icon-maskable-512.png",
+  "./assets/collectibles/loot-atlas.webp",
+  "./assets/shadows/shadow-allies.webp",
   "./assets/bosses/blue/0.webp",
   "./assets/bosses/blue/1.webp",
   "./assets/bosses/blue/2.webp",
@@ -194,6 +196,13 @@ const PRECACHE_URLS = [
   "./assets/player/walk/3.webp",
   "./assets/player/walk/4.webp",
   "./assets/player/walk/5.webp",
+  "./assets/tilesets/ruins.webp",
+  "./assets/tilesets/ice.webp",
+  "./assets/tilesets/verdant.webp",
+  "./assets/tilesets/inferno.webp",
+  "./assets/tilesets/celestial.webp",
+  "./assets/tilesets/abyss.webp",
+  "./assets/tilesets/void.webp",
   "./assets/portals/blue/0.webp",
   "./assets/portals/blue/1.webp",
   "./assets/portals/blue/2.webp",
